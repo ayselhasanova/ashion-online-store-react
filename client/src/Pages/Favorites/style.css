@@ -1,0 +1,32 @@
+.fav-container{
+    width: 70%;
+    margin: 80px auto;
+}
+
+.fav-img{
+    width: 50px;
+    height: 70px;
+}
+
+.cart-heading{
+    font-family: 900;
+}
+
+.fav-table{
+    width: 100%;
+}
+
+th:first-child {
+    width: 80%;
+}
+
+th,
+tr,
+td {
+    border: 1px solid #ebebeb;
+    padding: 20px;
+}
+
+.fav-product{
+    gap: 30px;
+}

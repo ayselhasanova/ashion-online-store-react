@@ -1,0 +1,35 @@
+#contact{
+    width: 70%;
+    margin: auto;
+}
+
+.contact-info>p {
+    margin-bottom: 20px;
+}
+
+.contact>h2 {
+    text-transform: uppercase;
+}
+
+.fa-location-dot,
+.fa-phone,
+.fa-headphones {
+    color: brown;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    border-color: #a9a9a9;
+}
+.submit-btn-send{
+    width: 250px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 30px;
+}

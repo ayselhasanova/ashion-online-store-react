@@ -1,0 +1,118 @@
+.container-blog {
+    width: 70%;
+    margin: 70px auto;
+    gap: 80px;
+}
+
+.posts {
+    box-sizing: content-box;
+    gap: 50px;
+}
+
+.post {
+    box-shadow: 0px 5px 12px rgba(91, 91, 91, 0.158);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 calc(50% - 50px);
+    border-radius: 10px;
+}
+
+.post>img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    margin: 0px 30px 20px;
+}
+
+.aut-publish{
+    display: flex;
+}
+
+.author,
+.published-date {
+    font-size: 14px;
+    color: #919090;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(198, 195, 195, 0.186);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.post:hover .overlay {
+    opacity: 1;
+}
+
+.readmore {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.previous-btn button, .next-btn button{
+    background-color: transparent;
+    border: none;
+}
+
+.categories {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.categories-list>li>a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.categories-heading>h3,
+.feauture-heading>h3 {
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.categories-heading>h3::before,
+.feauture-heading>h3::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #d40a0a;
+    visibility: visible;
+}
+
+.fpost {
+    margin-bottom: 20px;
+}
+
+.fpost>img {
+    margin-right: 15px;
+}
+
+.fc-pheading {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fc-pcontent {
+    font-size: 12px;
+    line-height: 0.8;
+    color: #4b4b4b;
+}

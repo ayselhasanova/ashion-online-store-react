@@ -1,0 +1,46 @@
+.container-blogDetail {
+    margin: 60px auto;
+    width: 70%;
+    gap: 80px;
+}
+
+.bd-img {
+    position: relative;
+}
+
+.bd-img img{  
+    width: 100%;
+}
+
+.blog-detail .bd-title {
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-top: -100px;
+    position: relative;
+    margin-right: 50px;
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.bd-title span{
+    padding: 5px 10px;
+    background-color: rgb(195, 1, 1);   
+    border-radius: 3px; 
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.tc-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.tc-buttons button {
+    background-color: transparent;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 14px;
+    color: #6a6969;
+}

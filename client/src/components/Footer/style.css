@@ -1,0 +1,134 @@
+footer {
+    width: 75%;
+    margin: auto;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.quick-links-heading,
+.account-heading,
+.newsletter-heading {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.quick-links-content>ul,
+.account-content>ul {
+    padding: 0;
+}
+
+
+form {
+    position: relative;
+}
+
+.newsletter form button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.newsletter form input {
+    height: 52px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+button,
+input {
+    margin: 0;
+    overflow: visible;
+}
+
+.subscribe-btn {
+    font-size: 14px;
+    color: #ffffff;
+    background: #ca1515;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-youtube,
+.fa-instagram,
+.fa-pinterest {
+    background-color: #e1e1e1;
+    height: 40px;
+    width: 40px;
+    padding: 13px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+hr {
+    color: #666666;
+    width: 80%;
+    margin: 20px auto 30px;
+}
+
+.copyrights {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+.newsletter-content form input {
+    height: 52px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.newsletter-content form button {
+    position: absolute;
+    width: 40%;
+    right: 4px;
+    top: 4px;
+}
+
+.submit-btn {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ca1515;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+/* .footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.sm-icon{
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    margin: 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
