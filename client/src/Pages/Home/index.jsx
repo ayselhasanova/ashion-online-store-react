@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useDispatch } from 'react-redux';
-import { addToFav, removeFromFav } from "../../redux/actions/favActions";
-import { addToCart, removeFromCart } from "../../redux/actions/cartActions";
+import { useDispatch } from "react-redux";
+import { addToFav } from "../../redux/actions/favActions";
+import { addToCart } from "../../redux/actions/cartActions";
 
 // CSS
 import "../../assets/css/reset.css";
@@ -49,32 +49,36 @@ const groupByCategory = (data) => {
 
 const Home = () => {
   // New Products
+  const [category, setCategory] = useState('All');
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
-      const fetchData = async () => {
-          try {
-              const response = await fetch("http://localhost:3000/api/products/");
-              const data = await response.json();
-              setProducts(data);
-          } catch (error) {
-              console.error("Error fetching data:", error);
-          }
-      };
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/products/");
+        const data = await response.json();
+        setProducts(data);
+        setFilteredProducts(data); //
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-      fetchData();
+    fetchData();
   }, []);
 
   const handleAddToFav = (product) => {
-      dispatch(addToFav(product));
+    dispatch(addToFav(product));
   };
 
   const handleAddToCart = (product) => {
-      dispatch(addToCart(product));
+    dispatch(addToCart(product));
   };
 
   const newProducts = products.filter((product) => product.newproduct === true);
+
 
   // Hot trends, Bestsellers, Feautures
   const [data, setData] = useState([]);
@@ -195,6 +199,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
 
       {/* New product start*/}
       <section>
@@ -321,7 +326,7 @@ const Home = () => {
             <h2>Trend </h2>
             {groupedData.trend.map((product) => (
               <div key={product._id} className="product-item d-flex">
-                <div className="ht-bs-f-img" >
+                <div className="ht-bs-f-img">
                   <img
                     src={product.image}
                     alt={product.name}

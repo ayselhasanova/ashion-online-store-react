@@ -9,7 +9,7 @@ import Instagram from "../../components/Instagram";
 import "./style.css";
 
 const FavList = () => {
-  const favItems = useSelector((state) => state.favorites.favs);
+  const favItems = useSelector((state) => state.favs.favs);
   const dispatch = useDispatch();
 
   const handleRemoveFromFav = (productId) => {
