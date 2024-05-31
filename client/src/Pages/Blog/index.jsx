@@ -59,7 +59,7 @@ const Blog = () => {
               </div>
             ))}
           </div>
-          <div className="next-previous-btns d-flex">
+          <div className="next-previous-btns d-flex justify-content-center">
             <div className="previous-btn">
               {currentPage > 1 && (
                 <button onClick={handlePreviousPage}><i className="pi pi-chevron-left"></i></button>

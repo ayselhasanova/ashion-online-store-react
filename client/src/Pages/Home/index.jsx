@@ -89,7 +89,7 @@ const Home = () => {
         const response = await axios.get(url);
         setData(response.data);
       } catch (error) {
-        console.error("Məlumat əldə edilərkən səhv:", error);
+        console.error("Error while fetching:", error);
       }
     };
 

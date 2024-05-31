@@ -1,8 +1,8 @@
 // React tools
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addToFav, removeFromFav } from "../../redux/actions/favActions";
-import { addToCart, removeFromCart } from "../../redux/actions/cartActions";
+import { addToFav } from "../../redux/actions/favActions";
+import { addToCart } from "../../redux/actions/cartActions";
 
 // Css
 import "./style.css";
@@ -23,7 +23,7 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 9;
+  const postsPerPage = 6;
 
   const dispatch = useDispatch();
 
@@ -170,66 +170,6 @@ const Shop = () => {
                 <option value="priceDesc">High to Low</option>
               </select>
             </div>
-
-            <div className="by-size">
-              <h3>Shop by size</h3>
-              <form action="">
-                <div className="checkboxes d-flex">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    id="xss"
-                    name="xss"
-                  />
-                  <label htmlFor="xss">XSS</label>
-                </div>
-                <div className="checkboxes d-flex">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    id="xss"
-                    name="xss"
-                  />
-                  <label htmlFor="xss">XS</label>
-                </div>
-                <div className="checkboxes d-flex">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    id="xss"
-                    name="xss"
-                  />
-                  <label htmlFor="xss">S</label>
-                </div>
-                <div className="checkboxes d-flex">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    id="xss"
-                    name="xss"
-                  />
-                  <label htmlFor="xss">M</label>
-                </div>
-                <div className="checkboxes d-flex">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    id="xss"
-                    name="xss"
-                  />
-                  <label htmlFor="xss">L</label>
-                </div>
-                <div className="checkboxes d-flex">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    id="xss"
-                    name="xss"
-                  />
-                  <label htmlFor="xss">XL</label>
-                </div>
-              </form>
-            </div>
             <div className="by-color">
               <h3>Shop by color</h3>
               <form action="">
@@ -334,7 +274,7 @@ const Shop = () => {
                 ))}
               </ul>
             </div>
-            <div className="next-previous-btns d-flex">
+            <div className="next-previous-btns d-flex justify-content-center">
             <button onClick={handlePreviousPage} disabled={currentPage === 1}>
             <i className="pi pi-chevron-left"></i>
               </button>

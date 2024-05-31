@@ -34,7 +34,7 @@ const Contact = () => {
                 <h2>Send message</h2>
                 <form action="">
                   <input type="text" placeholder="Name" />
-                  <input type="text" placeholder="Email" />
+                  <input type="email" placeholder="Email" />
                   <input type="text" placeholder="Website" />
                   <input type="text" placeholder="Message" />
                   <input
